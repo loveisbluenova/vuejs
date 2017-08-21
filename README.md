@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/npm-0.4.2-blue.svg">
 </p>
 
-# vue2-admin-lte ([Demo](https://devjin0617.github.io/vue2-admin-lte/))
+# vue2-admin-lte
 
 > AdminLTE of Admin control panel template Based on Vuejs 2.x Front-end Framework.
 
