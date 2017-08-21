@@ -9,7 +9,7 @@
     <div class="icon">
       <i class="ion" :class="icon"></i>
     </div>
-    <a href="#" class="small-box-footer" @click="moreEvent">{{moreText}} <i class="fa fa-arrow-circle-right"></i></a>
+    <a href="#" class="small-box-footer" @click="moreEvent"><i class="fa fa-plus-circle"></i> {{moreText}} </a>
   </div>
 </template>
 

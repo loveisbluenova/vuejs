@@ -33,7 +33,6 @@ export default {
   },
   computed: {
     parseDate () {
-      // TODO: 시간 파싱 개발해야 합니다.
       return this.date.toDateString()
     }
   },

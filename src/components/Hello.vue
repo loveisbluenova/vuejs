@@ -1,85 +1,84 @@
 <template>
-  <div class="hello">
-    <div>
-      <img class="logo" src="../assets/logo.png">
-      <button
-        id="myButton"
-        class="btn bg-maroon btn-flat margin"
-        @click="clickBtn"
-        :disabled="loading"
-        ><template v-if="loading">{{msgBye}}</template><template v-else>{{msgHello}}</template></button>
-    </div>
-    <div>
-      <h1>Demo list</h1>
+  <div class="dashboard">
+    <row>
+      <div class="col-lg-3 col-xs-6">
+        <va-small-box
+          color="aqua"
+          icon="ion-bag"
+          title="150"
+          description="New Order"
+          @more-click="clickToSmallBox"
+          moreText="More info">
+        </va-small-box>
+      </div>
+      <div class="col-lg-3 col-xs-6">
+        <va-small-box
+          color="green"
+          icon="ion-stats-bars"
+          title="53%"
+          description="Bounce Rate"
+          moreText="More info">
+        </va-small-box>
+      </div>
+      <div class="col-lg-3 col-xs-6">
+        <va-small-box
+          color="yellow"
+          icon="ion-person-add"
+          title="44"
+          description="User Registrations"
+          moreText="More info">
+        </va-small-box>
+      </div>
+      <div class="col-lg-3 col-xs-6">
+        <va-small-box
+          color="red"
+          icon="ion-pie-graph"
+          title="65"
+          description="Unique Visitors"
+          moreText="More info">
+        </va-small-box>
+      </div>
+    </row>
 
-      <h3>Dashboard</h3>
-      <ul>
-        <li>Dashboard v1</li>
-        <li>Dashboard v2</li>
-        <li>InfoBox</li>
-        <li>Chart.js</li>
-        <li>Alert</li>
-        <li>Modal</li>
-        <li>APIExample</li>
-      </ul>
-
-      <h3>Widgets</h3>
-      <ul>
-        <li>all</li>
-      </ul>
-
-      <h3>UI Elements</h3>
-      <ul>
-        <li>General</li>
-        <li>Buttons</li>
-      </ul>
-
-      <h3>Forms</h3>
-      <ul>
-        <li>General Elements</li>
-      </ul>
-    </div>
+    <row>
+      <section class="col-lg-7 connectedSortable ui-sortable">
+        <va-chat-box></va-chat-box>
+        <va-todo-list></va-todo-list>
+        <va-quick-mail></va-quick-mail>
+      </section>
+      <section class="col-lg-5 connectedSortable ui-sortable">
+        <va-calendar></va-calendar>
+      </section>
+    </row>
   </div>
 </template>
 
 <script>
+import VASmallBox from '../widgets/VASmallBox.vue'
+import VAChatBox from '../widgets/VAChatBox.vue'
+import VATodoList from '../widgets/VATodoList.vue'
+import VAQuickMail from '../widgets/VAQuickMail.vue'
+import VACalendar from '../widgets/VACalendar.vue'
+
 export default {
-  name: 'hello',
+  name: 'dashboard',
   data () {
     return {
-      msgHello: 'Hello',
-      msgBye: 'Bye',
-      loading: false
+
     }
   },
   methods: {
-    clickBtn () {
-      this.loading = !this.loading
-      setTimeout(() => {
-        this.loading = !this.loading
-      }, 1000)
+    clickToSmallBox () {
+      alert('click!!!: clickToSmallBox')
     }
+  },
+  components: {
+    'va-small-box': VASmallBox,
+    'va-chat-box': VAChatBox,
+    'va-todo-list': VATodoList,
+    'va-quick-mail': VAQuickMail,
+    'va-calendar': VACalendar
   }
 }
+
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-</style>

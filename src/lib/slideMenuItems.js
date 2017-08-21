@@ -1,66 +1,11 @@
 module.exports = [
   {
-    type: 'tree',
+    type: 'item',
     icon: 'fa fa-dashboard',
     name: 'Dashboard',
-    items: [
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Dashboard v1',
-        router: {
-          name: 'DashboardV1'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Dashboard v2',
-        router: {
-          name: 'DashboardV2'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'InfoBox',
-        router: {
-          name: 'InfoBoxExample'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Chart.js',
-        router: {
-          name: 'ChartExample'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Alert',
-        router: {
-          name: 'AlertExample'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'Modal',
-        router: {
-          name: 'ModalExample'
-        }
-      },
-      {
-        type: 'item',
-        icon: 'fa fa-circle-o',
-        name: 'APIExample',
-        router: {
-          name: 'APIExample'
-        }
-      }
-    ]
+    router: {
+      name: 'Dashboard'
+    }
   },
   {
     type: 'tree',
@@ -71,13 +16,17 @@ module.exports = [
         type: 'item',
         icon: 'fa fa-angle-double-right',
         name: 'Users',
-        link: 'page/layout/top-nav.html'
+        router: {
+          name: 'Users'
+        }
       },
       {
         type: 'item',
         icon: 'fa fa-angle-double-right',
         name: 'Administrator',
-        link: 'page/layout/boxed.html'
+        router: {
+          name: 'Administrator'
+        }
       }
     ]
   },
@@ -91,7 +40,7 @@ module.exports = [
         icon: 'fa fa-angle-double-right',
         name: 'Acupuncture',
         router: {
-          name: 'General'
+          name: 'Acupuncture'
         }
       },
       {
@@ -99,7 +48,7 @@ module.exports = [
         icon: 'fa fa-angle-double-right',
         name: 'Materia Medica',
         router: {
-          name: 'Icons'
+          name: 'Materiamedica'
         }
       },
       {
@@ -107,7 +56,7 @@ module.exports = [
         icon: 'fa fa-angle-double-right',
         name: 'TCM Foundations',
         router: {
-          name: 'Buttons'
+          name: 'Tcmfoundations'
         }
       },
       {
@@ -115,7 +64,7 @@ module.exports = [
         icon: 'fa fa-angle-double-right',
         name: 'Texts',
         router: {
-          name: 'Sliders'
+          name: 'Texts'
         }
       }
     ]
@@ -130,7 +79,7 @@ module.exports = [
         icon: 'fa fa-angle-double-right',
         name: 'Content Request',
         router: {
-          name: 'GeneralElements'
+          name: 'Contentrequest'
         }
       },
       {
@@ -138,7 +87,7 @@ module.exports = [
         icon: 'fa fa-angle-double-right',
         name: 'Bug Report',
         router: {
-          name: 'AdvancedElements'
+          name: 'Bugreport'
         }
       }
     ]
@@ -148,7 +97,7 @@ module.exports = [
     icon: 'fa fa-gear',
     name: 'Settings',
     router: {
-      name: 'WidgetsExample'
+      name: 'Settings'
     }
   }
 ]

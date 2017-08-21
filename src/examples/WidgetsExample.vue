@@ -226,7 +226,7 @@
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
-          placeholder="내용을 입력하세요..."
+          placeholder="Please insert content."
         ></va-direct-chat>
       </div>
       <div class="col-md-3 col-sm6 col-xs-12">
@@ -236,7 +236,7 @@
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
-          placeholder="내용을 입력하세요..."
+          placeholder="Please insert content."
         ></va-direct-chat>
       </div>
       <div class="col-md-3 col-sm6 col-xs-12">
@@ -246,7 +246,7 @@
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
-          placeholder="내용을 입력하세요..."
+          placeholder="Please insert content."
         ></va-direct-chat>
       </div>
       <div class="col-md-3 col-sm6 col-xs-12">
@@ -261,7 +261,7 @@
       </div>
     </row>
 
-    <!-- TODO: Typography Component 완성 후 교체예정 -->
+    <!-- TODO: Typography Component -->
     <h2 class="page-header">Social Widgets</h2>
 
     <row>
